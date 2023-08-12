@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Poppins&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon"
+        href="https://freepngimg.com/download/tea/75295-tea-coffee-cafe-starbucks-logo-png-file-hd.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        {{>navbar}}
+        <div class="register-page">
+            <form method="post" action="/register">
+                <h1>Login to Starbucks</h1>
+                <div class="grid-reg">
+                    <div class="FLEX">
+                        <label>Email</label><br>
+                        <input type="email" name="email" placeholder="Enter Email ID ">
+                        <br>
+                    </div>
+                    <div class="FLEX">
+                        <label>Mobile nUMBER</label><br>
+                        <input type="number" name="phone" placeholder="Enter  Mobile Number">
+                        <br>
+                    </div>
+                    <div class="FLEX">
+                        <label>CREATE PASSWORD</label><br>
+                        <input type="password" name="password" placeholder="Enter Password">
+                    </div>
+                    <div class="FLEX">
+
+                        <label>CONFIRM PASSWORD</label><br>
+                        <input type="password" name="cpassword" placeholder="Enter Password">
+                        <br>
+                    </div>
+                </div>
+                <button class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>

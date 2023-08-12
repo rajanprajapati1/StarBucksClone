@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Pay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Poppins&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon"
+        href="https://freepngimg.com/download/tea/75295-tea-coffee-cafe-starbucks-logo-png-file-hd.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        {{>navbar}}
+        <div class="pay_section">
+            <div class="pay_headig">
+                <h3>My Starbucks Cards</h3>
+                <div class="pay_right">
+                    <span>My Starbucks Cards</span>
+                    <button>Add Card</button>
+                </div>
+            </div>
+
+            <div class="pay-banner">
+                <div class="Pcard">
+                    <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png"
+                        alt="">
+                    <div class="Pcard-details">
+                        <span>Aroma<br>*5053 </span>
+                        <strong>₹0.00</strong>
+                    </div>
+                </div>
+                <div class="Pcard"
+                    style="background-image: url('https://www.starbucks.in/assets/images/bg_pattern.svg'); background-size: cover; background-position: top;">
+                    <div class="add_new">
+                        <h3>Add new Startbucks Card</h3>
+                        <span class="add_bt"><img
+                                src="https://www.starbucks.in/assets/icon/add_circle_darkened_green.svg">Add
+                            Card </span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_nav">
+                <div class="scroll_bar">
+                    <span>Pay at Store</span>
+                    <span>Load Card</span>
+                    <span>Past Transaction</span>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="pay_store">
+                    <h4>Scan the Barcode and Pay at the Store</h4>
+                    <img src="https://www.freepnglogos.com/uploads/barcode-png/barcode-laser-code-vector-graphic-pixabay-3.png"
+                        alt="">
+                    <span>8000 0000 9650 53</span>
+                </div>
+                <div class="load_cary">
+                    <p>no data</p>
+                </div>
+                <div class="past_tran">
+                    <img src="https://www.starbucks.in/assets/images/notransactions.svg" alt="">
+                    <p>No transactions found!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    </div>
+</body>
+<script>
+
+    const scrolllink = document.querySelectorAll('.scroll_bar>span');
+    const pay_store = document.querySelector(".pay_store");
+    const load_cary = document.querySelector(".load_cary");
+    const past_tran = document.querySelector(".past_tran");
+
+    if (scrolllink.length > 0) {
+        scrolllink[0].classList.add('active');
+        pay_store.style.left = '10%';
+
+    }
+
+    scrolllink[0].addEventListener("click", () => {
+        pay_store.style.left = '10%';
+        load_cary.style.right = '100%';
+        past_tran.style.left = '100%';
+
+    })
+
+    scrolllink[1].addEventListener("click", () => {
+        load_cary.style.right = '10%';
+        pay_store.style.left = '100%';
+        past_tran.style.left = '100%';
+
+    })
+
+    scrolllink[2].addEventListener("click", () => {
+        past_tran.style.left = '10%';
+        load_cary.style.right = '100%';
+        pay_store.style.left = '100%';
+
+    })
+    scrolllink.forEach((link) => {
+        link.addEventListener("click", () => {
+            scrolllink.forEach((otherLink) => {
+                if (otherLink !== link) {
+                    otherLink.classList.remove('active');
+                }
+            });
+            link.classList.toggle('active');
+        });
+    });
+</script>
+
+</html>

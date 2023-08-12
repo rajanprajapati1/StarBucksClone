@@ -1,0 +1,99 @@
+footer {
+    background-color: #0E382C;
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+footer>main {
+    width: 89%;
+    height: 50vh;
+    /* background-color: aliceblue; */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .logo {
+    margin: 25px 10px;
+    padding-right: 35px;
+}
+
+main .about-section,
+.response,
+.quick-link,
+.dowload-from {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 10px;
+    flex-basis: 20%;
+    text-align: left;
+    color: white;
+}
+
+main h3 {
+    font-size: 1.2em;
+}
+
+.social-media {
+    flex-basis: 22%;
+}
+
+.social-media img {
+    width: 45px;
+}
+
+main .about-section,
+.response,
+.quick-link,
+.social-media,
+.dowload-from a {
+    margin-top: 10px;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+main a {
+    margin-top: 10px;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: 0.5s ease-in-out;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.copyright-section {
+    width: 89%;
+    /* background-color: antiquewhite; */
+    height: 8vh;
+}
+
+.copyright-section .mains {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 14px;
+    font-size: 0.9em;
+
+}
+
+.copyright-section hr {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mains a {
+    text-decoration: none;
+    color: white;
+    margin: 14px;
+}

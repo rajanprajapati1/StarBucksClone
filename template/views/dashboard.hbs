@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Poppins&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon"
+        href="https://freepngimg.com/download/tea/75295-tea-coffee-cafe-starbucks-logo-png-file-hd.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        {{>navbar}}
+        <div class="login-page">
+            <div class="welcome_page" style="background-color: #1E3932;">
+                <img id="aavtar" src="https://www.starbucks.in/assets/images/profileDP.svg" alt=""
+                    style=" border:5px solid white;">
+                <button id="change"><img src="https://cdn-icons-png.flaticon.com/512/5509/5509313.png" alt=""></button>
+                <strong style="font-size: 2em; color: white;margin-top: -3rem;">
+                    <h2>{{channelname}} </h2>
+                </strong>
+                <br>
+                <div class="avatar_box">
+                    <div class="row_wrap">
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairBigHair&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=PastelYellow&eyeType=Happy&eyebrowType=UnibrowNatural&mouthType=Smile&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Prescription01&hairColor=SilverGray&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=White&graphicType=Skull&eyeType=Dizzy&eyebrowType=FlatNatural&mouthType=Eating&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=Pink&graphicType=Bat&eyeType=Happy&eyebrowType=RaisedExcitedNatural&mouthType=Smile&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Prescription01&hairColor=Blonde&facialHairType=Blank&facialHairColor=Black&clotheType=BlazerSweater&eyeType=Wink&eyebrowType=RaisedExcited&mouthType=Twinkle&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=WinterHat4&accessoriesType=Round&hatColor=PastelOrange&facialHairType=BeardMedium&facialHairColor=Brown&clotheType=BlazerShirt&eyeType=Side&eyebrowType=FlatNatural&mouthType=Serious&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Wayfarers&hairColor=BrownDark&facialHairType=BeardMajestic&facialHairColor=Auburn&clotheType=BlazerShirt&eyeType=Wink&eyebrowType=DefaultNatural&mouthType=Sad&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairBigHair&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=Blank&facialHairColor=Auburn&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Bear&eyeType=Default&eyebrowType=UpDownNatural&mouthType=Twinkle&skinColor=Light' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=WinterHat4&accessoriesType=Prescription01&hatColor=Black&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=PastelBlue&graphicType=Bat&eyeType=Surprised&eyebrowType=RaisedExcited&mouthType=Smile&skinColor=Yellow' />
+                        <img
+                            src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairMiaWallace&accessoriesType=Kurt&hairColor=BlondeGolden&facialHairType=Blank&clotheType=Hoodie&clotheColor=PastelOrange&eyeType=EyeRoll&eyebrowType=UnibrowNatural&mouthType=Smile&skinColor=Light' />
+                        <img src='https://www.starbucks.in/assets/images/profileDP.svg' />
+                    </div>
+                </div>
+                <h3 style=" color: white;margin-top: -2.2rem; font-size: 1.2em; letter-spacing: 2px;">Welcome Tier</h3>
+            </div>
+        </div>
+        <div class="dashboard_menu">
+            <div class="menu">
+                <div class="flex-menu">
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/profile_rewards_star.svg" />
+                            <h2>STARBUCKS REWARDS</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/orders.svg" />
+                            <h2>ORDERS</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/starbucks_pay.svg" />
+                            <h2>STARBUCKS PAY</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/credit_card.svg" />
+                            <h2> OTHER PAYMENT MODES</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/help_centre.svg" />
+                            <h2>HELP CENTER</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/articles_ico.svg" />
+                            <h2> SAVED ARTICLES & NEWS</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                    <div class="first">
+                        <div class="reward">
+                            <img src="https://www.starbucks.in/assets/icon/logout.svg" />
+                            <h2 onclick="logout()">LOG OUT</h2>
+                        </div>
+                        <img src="https://www.starbucks.in/assets/icon/arrow_right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+<script>
+    const aavtar = document.getElementById("aavtar");
+    const editbtn = document.getElementById("change");
+    const avatarbox = document.querySelector('.avatar_box');
+    const allavatr = document.querySelectorAll(".row_wrap img");
+    editbtn.addEventListener("click", () => {
+        if (avatarbox.style.display === "grid") {
+            avatarbox.style.display = "none";
+        } else {
+            avatarbox.style.display = "grid";
+        }
+    });
+
+    allavatr.forEach((aav, i) => {
+        aav.addEventListener("click", (e) => {
+            aavtar.src = aav.src;
+        })
+    })
+    function logout() {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You will be logged out!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, log me out!",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // User confirmed logout, redirect to logout route
+                window.location.href = "/logout";
+                console.log("user  logout")
+
+            } else {
+                console.log("user cancel the request of logout")
+            }
+        });
+    }
+</script>
+
+</html>
